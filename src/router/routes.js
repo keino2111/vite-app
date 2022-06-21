@@ -1,6 +1,7 @@
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import NotFound from '../views/NotFound.vue'
+import Login from '../views/Login.vue'
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
@@ -15,4 +16,5 @@ export const routes = [
     // component: () => import('./views/About.vue')
   },
   { path: '/:path(.*)', component: NotFound },
+  { path: '/login', component: Login, meta: { title: 'Login' } },
 ]
